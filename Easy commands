@@ -1,0 +1,6 @@
+# docker pull
+docker pull mcr.microsoft.com/oss/nginx/nginx:stable
+# docker tag 
+docker tag mcr.microsoft.com/oss/nginx/nginx:stable myregistry.azurecr.io/samples/nginx
+#docker push
+docker push myregistry.azurecr.io/samples/nginx
