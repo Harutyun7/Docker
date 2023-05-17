@@ -4,3 +4,7 @@ docker pull mcr.microsoft.com/oss/nginx/nginx:stable
 docker tag mcr.microsoft.com/oss/nginx/nginx:stable myregistry.azurecr.io/samples/nginx
 #docker push
 docker push myregistry.azurecr.io/samples/nginx
+#docker image tar 
+docker save <image tag> > <failename>.tar
+#docker image un tar 
+docker load < <failename>.tar
