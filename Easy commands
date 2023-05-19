@@ -8,3 +8,5 @@ docker push myregistry.azurecr.io/samples/nginx
 docker save <image tag> > <failename>.tar
 #docker image un tar 
 docker load < <failename>.tar
+# remove all images
+docker rmi $(docker images -a -q)
