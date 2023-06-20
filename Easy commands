@@ -10,3 +10,5 @@ docker save <image tag> > <failename>.tar
 docker load < <failename>.tar
 # remove all images
 docker rmi $(docker images -a -q)
+# remove docker login cidentials
+rm ~/.docker/config.json
